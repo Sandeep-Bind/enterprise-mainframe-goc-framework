@@ -1,0 +1,13 @@
+incident_severity:
+  sev_1:
+    description: "Critical Core Banking Batch Failure impacting multiple downstream dependencies."
+    response_time_sla_mins: 5
+    action: "Initiate technical phone bridge, page Major Incident Manager, notify Lead Mainframe DBA."
+  sev_2:
+    description: "Isolated job abend with automated retry capability available."
+    response_time_sla_mins: 15
+    action: "Execute standard JCL correction and monitor rerun progress via Control-M."
+  sev_3:
+    description: "Warning event or delayed job stream without direct SLA breach."
+    response_time_sla_mins: 30
+    action: "Log event in GOC tracker and notify shift supervisor."
